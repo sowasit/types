@@ -1,0 +1,35 @@
+{
+  "name": "@sowasit/types",
+  "version": "0.1.0",
+  "description": "SoWasIt type definitions and contracts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc && tsc-alias",
+    "clean": "rm -rf dist",
+    "type-check": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "api",
+    "types",
+    "contracts"
+  ],
+  "author": "Askelia",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.19.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.16"
+  }
+}
