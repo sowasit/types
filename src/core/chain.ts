@@ -11,6 +11,12 @@ export enum Visibility {
 	PRIVATE = 'private'
 }
 
+/**
+ * Scope for filtering chains in queries
+ * - TENANT: Only chains owned by the tenant
+ * - PUBLIC: Only public chains from other tenants
+ * - ALL: Both tenant chains and public chains
+ */
 export enum ChainScope {
 	TENANT = 'tenant',
 	PUBLIC = 'public',
@@ -33,6 +39,7 @@ export interface Chain {
 	visibility: Visibility;
 	type: ChainType;
 	anchoring_id?: string | null;
+	anchoring_mode?: 'sync' | 'async';
 	metadata?: Record<string, any> | null;
 	created_at: Date;
 	hash: string;
