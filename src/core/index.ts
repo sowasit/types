@@ -6,6 +6,7 @@
  * @description Internal core models index.
  */
 
+export * from './audit';
 export * from './block';
 export * from './chain';
 export * from './user';

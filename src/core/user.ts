@@ -6,6 +6,8 @@
  * @description Core User entity definition.
  */
 
+import { CreatedBy } from './audit';
+
 export interface User {
 	id: string;
 	tenant_id: string;
@@ -20,5 +22,6 @@ export interface User {
 	email_verified_at?: Date;
 	last_login?: Date;
 	created_at: Date;
+	created_by: CreatedBy;
 	updated_at: Date;
 }

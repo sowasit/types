@@ -6,6 +6,8 @@
  * @description Core ApiKey entity definition.
  */
 
+import { CreatedBy } from './audit';
+
 export interface ApiKey {
 	id: string;
 	tenant_id: string;
@@ -16,4 +18,5 @@ export interface ApiKey {
 	expires_at?: Date;
 	last_used?: Date;
 	created_at: Date;
+	created_by: CreatedBy;
 }

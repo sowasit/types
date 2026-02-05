@@ -6,6 +6,8 @@
  * @description Core Chain entity definitions.
  */
 
+import { CreatedBy } from './audit';
+
 export enum Visibility {
 	PUBLIC = 'public',
 	PRIVATE = 'private'
@@ -42,5 +44,6 @@ export interface Chain {
 	anchoring_mode?: 'sync' | 'async';
 	metadata?: Record<string, any> | null;
 	created_at: Date;
+	created_by: CreatedBy;
 	hash: string;
 }
