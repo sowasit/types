@@ -12,7 +12,7 @@ export interface User {
 	id: string;
 	tenant_id: string;
 	email: string;
-	role: 'admin' | 'user' | 'viewer';
+	role: 'superadmin' | 'admin' | 'user' | 'viewer';
 	profile: {
 		first_name?: string;
 		last_name?: string;
