@@ -1,6 +1,6 @@
 {
   "name": "@sowasit/types",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "SoWasIt type definitions and contracts",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
