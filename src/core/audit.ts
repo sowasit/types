@@ -6,7 +6,7 @@
  * @description Audit-related types for tracking data origin.
  */
 
-export type CreatedByType = 'user' | 'api_key' | 'system';
+export type CreatedByType = 'user' | 'api_key' | 'system' | 'partner' | 'service';
 
 export interface CreatedBy {
 	type: CreatedByType;

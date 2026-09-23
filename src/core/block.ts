@@ -16,8 +16,11 @@ export interface BlockData {
 	chain_id: string;              // Unique chain identifier
 	prev_hash: string | null;      // Hash of the previous block
 	created_at: Date;
-	created_by: CreatedBy;         // Creation context (user, api_key, or system)
+	created_by: CreatedBy;         // Creation context (user, api_key, system, partner, service)
 	content: any;                  // Business data
+	signature?: string;            // Cryptographic signature (Base64)
+	public_key?: string;           // Signer public key in PEM format
+	public_key_id?: string;        // ID or fingerprint prefix of registered public key
 }
 
 /**

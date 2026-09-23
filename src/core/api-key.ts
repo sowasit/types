@@ -11,6 +11,7 @@ import { CreatedBy } from './audit';
 export interface ApiKey {
 	id: string;
 	tenant_id: string;
+	user_id?: string | null;
 	name: string;
 	key_hash: string;       // SHA-256 hash of the API key
 	permissions: string[];

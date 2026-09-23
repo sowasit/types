@@ -8,11 +8,13 @@
 
 import { CreatedBy } from './audit';
 
+export type UserRole = 'superadmin' | 'admin' | 'user' | 'partner' | 'service' | 'viewer';
+
 export interface User {
 	id: string;
 	tenant_id: string;
 	email: string;
-	role: 'superadmin' | 'admin' | 'user' | 'viewer';
+	role: UserRole;
 	profile: {
 		first_name?: string;
 		last_name?: string;

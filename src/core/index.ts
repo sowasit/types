@@ -13,3 +13,4 @@ export * from './user';
 export * from './tenant';
 export * from './api-key';
 export * from './anchoring';
+export * from './chain-permission';
